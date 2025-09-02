@@ -1,0 +1,17 @@
+{
+  "name": "l1",
+  "version": "1.0.0",
+  "description": "The first assignment of the course 1DV610 at Linneaus University",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
