@@ -6,13 +6,16 @@
  */
 
 import express from 'express'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
 const app = express()
 const PORT = 3015
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!')
-})
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+app.use(express.static(join(__dirname, 'public')))
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)
