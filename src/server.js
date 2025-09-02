@@ -5,15 +5,15 @@
  * @version 1.0.0
  */
 
-import express from 'express';
+import express from 'express'
 
-const app = express();
-const PORT = 3015;
+const app = express()
+const PORT = 3015
 
 app.get('/', (req, res) => {
-    res.send('Hello, world!');
-});
+  res.send('Hello, world!')
+})
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+  console.log(`Server is running on http://localhost:${PORT}`)
+})
