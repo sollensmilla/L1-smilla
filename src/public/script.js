@@ -6,6 +6,7 @@
  */
 
 const form = document.getElementById('name-form')
+const inputSection = document.getElementById('input-section')
 const input = document.getElementById('name-input')
 const message = document.getElementById('welcome-message')
 const greeting = document.getElementById('greeting')
@@ -29,6 +30,7 @@ form.addEventListener('submit', (event) => {
     message.textContent = `Hej ${name}! Kul att du är här!`
 
     greeting.classList.remove('hidden')
+    inputSection.classList.add('hidden')
 
     input.value = ''
   }
