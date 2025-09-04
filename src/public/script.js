@@ -21,7 +21,7 @@ const mascots = [
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
-  const name = input.ariaValueMax.trim()
+  const name = input.value.trim()
   if (name) {
     const randomMascot = mascots[Math.floor(Math.random() * mascots.length)]
     mascot.src = randomMascot
