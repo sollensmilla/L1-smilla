@@ -11,6 +11,7 @@ const input = document.getElementById('name-input')
 const message = document.getElementById('welcome-message')
 const greeting = document.getElementById('greeting')
 const mascot = document.getElementById('mascot')
+const resetButton = document.getElementById('reset-button')
 
 const mascots = [
   'img/sylvan1.png',
@@ -34,4 +35,9 @@ form.addEventListener('submit', (event) => {
 
     input.value = ''
   }
+})
+
+resetButton.addEventListener('click', () => {
+    greeting.classList.add('hidden')
+    inputSection.classList.remove('hidden')
 })
