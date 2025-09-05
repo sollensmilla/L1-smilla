@@ -14,27 +14,27 @@ const mascot = document.getElementById('mascot')
 const resetButton = document.getElementById('reset-button')
 
 const mascots = [
-  'img/sylvan1.png',
-  'img/sylvan2.png',
-  'img/sylvan3.png',
-  'img/sylvan4.png',
-  'img/sylvan5.png'
+    'img/sylvan1.png',
+    'img/sylvan2.png',
+    'img/sylvan3.png',
+    'img/sylvan4.png',
+    'img/sylvan5.png'
 ]
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault()
-  const name = input.value.trim()
-  if (name) {
-    const randomMascot = mascots[Math.floor(Math.random() * mascots.length)]
-    mascot.src = randomMascot
+    event.preventDefault()
+    const name = input.value.trim()
+    if (name) {
+        const randomMascot = mascots[Math.floor(Math.random() * mascots.length)]
+        mascot.src = randomMascot
 
-    message.textContent = `Hej ${name}! Kul att du är här!`
+        message.textContent = `Hej ${name}! Kul att du är här!`
 
-    greeting.classList.remove('hidden')
-    inputSection.classList.add('hidden')
+        greeting.classList.remove('hidden')
+        inputSection.classList.add('hidden')
 
-    input.value = ''
-  }
+        input.value = ''
+    }
 })
 
 resetButton.addEventListener('click', () => {
